@@ -617,10 +617,13 @@ width: 100%;
 		margin:0px;
 	}
 	#contact-form form h1{
-		margin:5px 0px;
+		margin:0px 5px 16px;
 	}
 	
 	
+	.c-l-heading{
+		margin-bottom: 16px;
+	}
 }
  
 @media(max-width:600px){
@@ -644,10 +647,20 @@ width: 100%;
 		left: 30px;
 		transform: translateX(-10px);
 	}
+
+	
 }
 @media(max-width:400px){
 	.s-box{
 		width: 100%;
 		height:400px;
 	}
+
+	.p-box{
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		height: 290px;	
+	}
+	
 }
