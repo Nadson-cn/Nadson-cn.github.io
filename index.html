@@ -1,241 +1,217 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <link rel="stylesheet" href="style.css">
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="http://areaaperta.com/nicescroll/js/jquery.nicescroll.min.js"></script>
-   
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest"> 
-
-    <title>Portfólio</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>Personal Website</title>
+    <!--style----->
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			background-color: #161616;
+		}
+	</style>
+	
 </head>
 <body>
-       <div class="container">
-        <div class="hamburguer">
-            <div class="line" id="line1"></div>
-            <div class="line" id="line2"></div>
-            <div class="line" id="line3"></div>
-            <span>Fechar</span>
+
+    <section id="main">
+        <img class="png-bg" src="images/png-bg.png" alt="">
+        <!--navigation-------------------------------->
+        <nav>
+        <!--logo--->
+        <a href="#" class="logo">NADSON</a>
+        <!--menu--------->
+        <div class="toggle"></div>
+        <ul class="menu">
+        <li class="active"><a href="#main" >Início</a></li>	
+        <li><a href="#about">Sobre</a></li>		
+        <li><a href="#portfolio">Portfólio</a></li>		
+        <li><a href="#contact-form">Contato</a></li>	
+        </ul>
+        <!--language-->
+        <a href="#" class="lang">PT-BR</a>
+        </nav>
+     </section>
+
+     <!--name--------------------------->
+	<div class="name">
+        <!--hello------->
+        <p>Hello</p>
+        <!--name--->
+        <h1>I'm <font color="#17d1ac">Nadson</font> Cardoso</h1>
+        <!--details--------------->
+        <p class="details">Este portfólio tem o objetivo de expor meus conechimentos e alguns dos meus projetos.</p>
+        <!--cv button-------------------->
+        <a href="#" class="cv-btn">Download Cv</a>
+        
+            
+        </div>
+            <!--down arrow-------------->
+        <div class="black-line" ></div>
+        <!--social---------------->
+        <div class="social">
+        <a href="https://www.facebook.com/nadson.cardoso.90"><i class="fab fa-facebook-f"></i></a>	
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/nadsoncn/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nadson-cardoso/"><i class="fab fa-linkedin"></i></a>	
         </div>
 
-        <header>
-            <div class="img-wrapper">
-                <img src="imagens/bg.jpg" alt="">
+        <!--about----------------------->
+		<section id="about">
+            <!--text---------------------->
+            <div class="about-text">
+            <h1>Sobre mim</h1>
+            <h2>Estudante & Desenvolvedor Full Stack</h2>
+            <p>Sou um estudante de 18 anos, sonhador e ambicioso. Meu objetivo é alcançar conhecimento suficiente para desenvolver aplicações em todos os ramos web. Font end, Back end, Mobile e Banco de dados.</p>
+             <button>View More Details</button>
             </div>
-            <div class="banner">
-                <h1>Desenvolvedor Full Stack<br> Estagiário para Web
-                    </h1>
-                <p>Nadson Cardoso do Nascimento</p>
-                <button>Saiba mais</button>
+            <!--about-model----------------->
+            
+            <img class="png-about" alt="model" src="images/about.png"/>	
+
+            </section>
+
+            <!--portfolio------------------->
+	<section id="portfolio">
+        <!--heading----------->
+        <h1 class="p-headind">Portfólio</h1>
+        <!--portfolio-container------------>
+        <div class="p-container">
+            <!--portfolio-box-1-------->
+            <div class="p-box">
+                <a href="Projetos/dev-finance/index.html">
+                <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Dev Finance</h1>
+                        <p>Controle de gastos</p>	
+                    </div>
+                    <!--bg-img------------->
+                    <img src="images/w1.jpg">
+                </a>
             </div>
-        </header>
-
-        <aside class="sidebar">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#conhecimento" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
-                    <li class="menu-item"><a href="#orcamento" class="menu-link">Orçamento</a></li>
-                </ul>
-            </nav>
-            <div class="social-media">
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
-                <a href=""><i class="fab fa-linkedin"></i></a>
-            </div>
-        </aside>
-
-        <section class="sessao-conhecimentos">
-            <div class="sessao-header">
-                <a class="scroll-suave" name="conhecimento"><h1>Conhecimentos</h1></a>
+    
+            <!--portfolio-box-2-------->
+            <div class="p-box">
+                <a href="#">
+                    <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Ideas</h1>
+                        <p>Client Project</p>	
+                    </div>
+                    <!--bg-img------------->
+                    <img src="images/w2.jpg">
+                </a>
             </div>
 
-            <div class="conhecimentos">
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML</h3>
+            <!--portfolio-box-3-------->
+            <div class="p-box">
+                <a href="#">
+                    <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Music</h1>
+                        <p>Client Project</p>	
                     </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-react"></i>
-                        <h3>React</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-node"></i>
-                        <h3>NodeJS</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-
-
-                <div class="conhecimento">
-                    <div class="conhecimento-header">
-                        <i class="fab fa-github"></i>
-                        <h3>Git e GitHub</h3>
-                    </div>
-                    <div class="conhecimento-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos commodi tempora pariatur praesentium explicabo provident expedita ducimus sunt ea, obcaecati totam? Molestiae!</p>
-                    </div>
-                </div>
-                <div class="conhecimentos-img-wrapper">
-                    <img src="imagens/conhecimentos.png" alt="imagem conhecimentos">
-                </div>
+                    <!--bg-img------------->
+                    <img src="images/w3.jpg">
+                </a>
             </div>
+
+            <!--portfolio-box-4-------->
+            <div class="p-box">
+                <a href="#">
+                    <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Time</h1>
+                        <p>Client Project</p>	
+                    </div>
+                    <!--bg-img------------->	
+                    <img src="images/w4.jpg">
+                </a>
+            </div>
+
+            <!--portfolio-box-5-------->
+            <div class="p-box">
+                <a href="#">
+                    <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Creative</h1>
+                        <p>Client Project</p>	
+                    </div>
+                    <!--bg-img------------->	
+                    <img src="images/w5.jpg">
+                </a>
+            </div>
+
+            <!--portfolio-box-6-------->
+            <div class="p-box">
+                <a href="#">
+                    <!--text--------->
+                    <div class="overlay-text">
+                        <h1>Books</h1>
+                        <p>Client Project</p>	
+                    </div>
+                    <!--bg-img------------->	
+                    <img src="images/w6.jpg">
+                </a>
+            </div>
+                
+        </div>
+        </section>
+
+         <!--Contact-btn------------------>
+	<section id="contact-btn">
+        <!--heading-------------->
+        <h1 class="c-b-heading">Quer mais informações?</h1>
+        <!--btn-------->
+            <button >Entre em contato</button>
+        </section>
+
+         <!--contact-form------------------->
+	<section id="contact-form">
+        <form>
+        <!--left--------------------------------------->
+        <div class="contact-left">
+        <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Conta</font>to</h1>
+        <!--name-------->
+        <div class="f-name">
+        <font >Nome</font>
+        <input type="text" placeholder="Nome Completo"/>
+        </div>
+        <!--email-------->
+        <div class="f-email">
+        <font >Email</font>
+        <input type="email" placeholder="Exemplo@gmail.com"/>
+        </div>
+        </div>
+        <!--right------------------------------------------->
+        <div class="contact-right">
+        <!--message-------->
+        <div class="message">
+        <font >Messagem</font>
+        <textarea name="message" rows="5" cols="20" placeholder="Escreva uma mensasagem..."></textarea>
+        </div>
+        <!--submit-btn------------>
+        <button>enviar</button>
+        </div>
+            
+        </form>
         </section>
         
-        <section class="sessao-projetos">
-            <div class="sessao-header">
-                <br>
-               <a class="scroll-suave" name="projetos"><h1>Projetos</h1></a>
-            </div>
+        <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
 
-            <div class="projetos">
-                <div class="card">
-
-                    <div class="card-img-wrapper">
-                        <img src="imagens/ProjImg.jpg" alt="">
-                    </div>
-
-                    <div class="card-info">
-                        <h2>Dev Finance</h2>
-                        <h3>HTML & CSS</h3>
-                        <p>Site desenvolvido para controlar gastos. A aplicação calcula a receita final do usuário através de entradas e saídas, acumulando os detalhes de cada operação feita.</p>
-
-                        <a href="Projetos/dev-finance/index.html"><button class="btn">Visualizar</button></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj2.jpg" alt="">
-                    </div>
-                    
-                    <div class="card-info">
-                        <h2>>Maratona</h2>
-                        <h3>HTML, CSS</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita in laboriosam voluptate nulla quae corporis iure esse pariatur fugit reprehenderit, iste aliquam sunt maiores impedit adipisci consequatur laborum. Possimus, accusantium.</p>
-
-                        <button class="btn"> Saiba Mais</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-img-wrapper">
-                        <img src="imagens/proj3.jpg" alt="">
-                    </div>
-
-                    <div class="card-info">
-                        <h2>Casa Bela</h2>
-                        <h3>HTML</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam rerum dolorum inventore saepe. Vero deleniti, doloremque, quam, quidem perspiciatis consequuntur ad saepe qui ratione optio impedit culpa illum debitis quos?</p>
-
-                        <button class="btn">Saiba Mais</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="sessao-contato">
-            <div class="contato-wrapper">
-                <div class="contato-left"></div>
-                <div class="contato-right">
-                    <h1> <a name="contato"> Contato</a></h1>
-                    <form action="">
-
-                        <div class="input-group">
-                            <input type="text" class="field" id="nome">
-                            
-                            <label for="nome" class="field-label">Nome</label>
-                        </div>
-
-                        <div class="input-group">
-                            <input type="text" class="field" id="email">
-
-                            <label for="email" class="field-label">E-mail</label>
-                        </div>
-
-                        <div class="input-group">
-                            <textarea class="field" id="mensagem"></textarea>
-
-                            <label risize="none" for="mensagem" class="field-label">Mensagem</label>
-                        </div>
-                        <button class="btn btn-submit" type="submit">Enviar</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <section class="sessao-orcamento">
-            <div class="orcamento-wrapper">
-                <h1>Faça um orçamento</h1>
-                <form action="">
-                    <label for="qtde">Quantidade de Páginas</label>
-                    <input type="number" min="1" name="qtde" id="qtde">
-                    <label for="js">Preciso de um script JS</label>
-                    <input type="checkbox" name="js" id="js">
-                    <label>Layout</label>
-                    <div class="group-layout">
-                        <div>
-                            <input type="radio" name="layout" id="layout-sim">
-                            <label for="layout-sim">Preciso de um layout</label>
-                        </div>
-                        <div>
-                            <input type="radio" name="layout" id="layout-nao">
-                            <label for="layout-nao">Já tenho um layout</label>
-                        </div>
-                    </div>
-                    <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
-                    <button class="btn btn-orcamento" type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </div>
+	    <script type="text/javascript">	
+		    /*Responsive Navigation*/
+	    $(document).ready(function(){
+            $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')            
+            $('nav ul').toggleClass('active-menu')
+            
+            
+            })
+        });
+	</script>
 </body>
-<script src="script.js"></script>
 </html>
